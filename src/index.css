@@ -1,0 +1,28 @@
+:root {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--colorBlack);
+  background-color: var(--colorDark);
+
+  --colorBlack: #2c4866;
+  --colorDark: #b19079;
+  --colorLight: #efebe0;
+  --thirdColor: #6b705c;
+  --btn: #2976b5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
