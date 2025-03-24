@@ -6,11 +6,15 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: var(--colorBlack);
+  color: var(--colorLight);
   background-color: var(--colorDark);
 
-  --colorBlack: #2c4866;
-  --colorDark: #b19079;
+  --colorBlack: #13242a;
+  --colorDark: #1a2f38;
+  --color3: #264653;
+  --color4: #2d5362;
+  --color6: #335f70;
+  --color5: #9760f7;
   --colorLight: #efebe0;
   --thirdColor: #6b705c;
   --btn: #2976b5;

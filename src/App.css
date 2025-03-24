@@ -1,11 +1,241 @@
 .app {
   width: 100%;
-  height: 100svh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-inline: 15rem;
+  padding-block: 3rem 5rem;
+}
+
+.hd {
+  color: var(--color5);
+}
+.txt {
+  opacity: 0.8;
+}
+
+/* .app section {
+  border: 1px solid #fff;
+} */
+
+.profile {
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
+
+.profile .user {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile .user > img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile .user .user__info {
+}
+
+.profile .user .user__info .user__info__contact {
+  display: flex;
+  list-style-type: none;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile .user .user__info .user__info__contact svg {
+  width: 3rem;
+  fill: var(--btn);
+}
+
+.technologies,
+.utils,
+.projects__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.technologies .technologies__list,
+.utils .utils__list {
+  background-color: var(--colorLight);
+  border-radius: 0.5rem;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  color: var(--colorBlack);
+}
+.technologies .technologies__list li,
+.utils .utils__list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects__section .projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.projects__section .projects__list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color6);
+  color: var(--colorLight);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.projects__section .projects__list > li .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__section .projects__list > li .imageRFC {
+  max-width: 25rem;
+  height: 100%;
+  object-fit: cover;
+}
+.projects__section .projects__list > li .plus {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.projects__section .projects__list > li .plus img {
+  width: 2rem;
+  height: 2rem;
+}
+.projects__section .projects__list > li .plus .technologies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
+  list-style-type: none;
+}
+.projects__section .projects__list > li .plus .technologies li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.projects__section .projects__list .repository {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-end;
+  background-color: var(--btn);
+  color: var(--colorLight);
+  fill: var(--colorLight);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.projects__section .projects__list .repository svg {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.extra {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.extra .extra__list {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  list-style-type: none;
+  flex-direction: column;
+}
+
+.extra .extra__list li .question {
+  font-weight: bold;
+  color: var(--colorLight);
+}
+.extra .extra__list li .response {
+  margin-left: 3rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.contact h2 {
+  align-self: flex-start;
+}
+
+.contact .contact__list {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .contact__list li,
+.contact .contact__list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contact .contact__list img {
+  width: 1.8rem;
+}
+
+.contact .contact__list li a,
+.email {
+  color: var(--colorLight);
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.contact .contact__list li a:hover,
+.email:hover {
+  opacity: 1;
+}
+/* .projects__section .projects__list li > .plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.projects__section .projects__list li > .plus .head {
+  max-width: 100%;
+  border: 1px solid #000;
+}
+
+.projects__section .projects__list li > .plus .technologies {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  list-style-type: none;
+}
+.projects__section .projects__list li > .plus img {
+  width: 2rem;
+} */
+
+/* }
 
 .app > section {
   background-color: var(--colorLight);
@@ -74,13 +304,171 @@
   fill: var(--btn);
 }
 
-.profile .bio {
-  text-align: justify;
-}
+
 .profile p {
   opacity: 0.8;
 }
 
 .projects {
   grid-column: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: flex-start;
+  gap: 3rem;
 }
+
+.projects article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: flex-start;
+  gap: 1rem;
+}
+
+
+.projects article .technologies__list,
+.projects article .utils__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  place-items: center;
+  width: fit-content;
+  gap: 1rem;
+}
+
+.projects article .technologies__list li,
+.projects article .utils__list li {
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorBlack);
+  color: var(--colorLight);
+  border-radius: 0.5rem;
+  width: 8rem;
+  height: 8rem;
+}
+
+.projects .projects_article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects .projects_article .projects__list {
+  width: 100%;
+}
+
+.projects .projects_article .projects__list > li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--colorBlack);
+  color: var(--colorLight);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.projects .projects_article .projects__list > li .imageRFC {
+  width: 100%;
+  max-height: 15rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.projects .projects_article .projects__list > li .imageIcon {
+  width: 2rem;
+}
+
+.projects .projects_article .projects__list > li .description {
+  opacity: 0.8;
+}
+
+.projects .projects_article .projects__list > li .technologies {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.projects .projects_article .projects__list > li .technologies li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.projects .projects_article .repository {
+  background-color: var(--btn);
+  color: var(--colorLight);
+  fill: var(--colorLight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  align-self: flex-end;
+}
+
+.projects .projects_article .repository svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.projects .extra {
+  width: 100%;
+}
+
+.projects .extra .extra__list {
+  padding-inline: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+.projects .extra .extra__list .question {
+  font-weight: bold;
+}
+
+.projects .contact .contact__list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.projects .contact .contact__list li,
+.projects .contact .contact__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--btn);
+}
+
+.projects .contact .contact__list li img {
+  width: 1.5rem;
+  cursor: pointer;
+  transform: tansform 0.2s;
+}
+
+.projects .contact .contact__list li img:hover {
+  transform: scale(1.1);
+}*/
