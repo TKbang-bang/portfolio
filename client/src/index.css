@@ -1,0 +1,63 @@
+:root {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
+
+  color-scheme: light dark;
+  color: var(--colorDark);
+  background-color: var(--colorGrey);
+
+  --colorBlack: #13242a;
+  --colorDark: #1a2f38;
+  --lightGreen: #4fffb0;
+  --green: #32de84;
+  --colorLight: #efebe0;
+  --colorGrey: #e5f5e4;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  .App > section,
+  .App > nav {
+    padding-inline: 8rem;
+  }
+
+  .App > section {
+    padding-block: 2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .App > nav,
+  .App > section {
+    padding-inline: 15rem;
+  }
+
+  .App > section {
+    padding-block: 5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App > section,
+  .App > nav {
+    padding-inline: 1rem;
+  }
+
+  .App > section {
+    padding-block: 2rem;
+  }
+}

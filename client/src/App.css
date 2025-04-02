@@ -1,0 +1,399 @@
+nav {
+  display: grid;
+  place-items: center;
+  padding-block: 1rem;
+}
+nav .logo {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--green);
+  font-weight: bolder;
+}
+
+.App .profile {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.App .profile .user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.App .profile .user img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.App .profile .user .user__info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.App .profile .user .user__info h1 {
+  font-size: 1.5rem;
+  color: var(--green);
+}
+
+.App .profile .plus {
+  font-size: 1.5rem;
+  color: var(--green);
+  font-weight: bold;
+  display: inline;
+}
+
+.App .profile .user .user__info .user__info__contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+  list-style-type: none;
+}
+
+.App .profile .user .user__info .user__info__contact svg {
+  fill: var(--green);
+  width: 3rem;
+  height: 3rem;
+}
+
+.App .profile .user .user__info .btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.App .profile .user .user__info .btns button,
+.App .profile .user .user__info .btns a {
+  background-color: var(--green);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  width: 10rem;
+  height: 2.8rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  display: block;
+}
+
+.App .profile .user .user__info .btns a {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+
+.App .profile .about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  color: var(--green);
+  /* font-size: 1rem; */
+}
+
+.App .portfolio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.App .portfolio .projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.App .portfolio .projects .projects__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.App .portfolio .projects .projects__list .project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  gap: 1rem;
+}
+
+.App .portfolio .projects .projects__list .project .img__container {
+  width: 30rem;
+  height: 12rem;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.App .portfolio .projects .projects__list .project .img__container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.App .portfolio .projects .projects__list .project .plus {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.App .portfolio .projects .projects__list .project__technologies {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.App .portfolio .projects .projects__list .project__technologies img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.App .portfolio .projects .projects__list a {
+  display: block;
+  background-color: var(--green);
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  gap: 0.5rem;
+}
+
+.App .portfolio .projects .projects__list a img {
+  width: 1.9rem;
+  height: 1.9rem;
+  filter: invert(100%);
+}
+
+.App .extra {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.App .extra > article {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.App .extra .title {
+  font-size: 1.5rem;
+}
+
+.App .extra .technologies .all {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.App .extra .technologies .all > div ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.App .extra .technologies .all > div ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App .extra .technologies .all > div ul li img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.App .extra .extra__container .extra__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.App .extra .extra__container .extra__list .question {
+  font-weight: bold;
+}
+.App .extra .extra__container .extra__list .response {
+  margin-left: 1rem;
+}
+
+.App .contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.App .contact .error {
+  color: #cd4747;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.App .contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.App .contact form > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.App .contact form > div label {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.App .contact form > div input,
+.App .contact form > div textarea,
+.App .contact form .about select,
+.App .contact form button {
+  width: 22rem;
+  min-height: 2.5rem;
+  max-height: 25rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  color: var(--colorDark);
+  font-size: 1rem;
+  resize: none;
+}
+
+.App .contact form button {
+  background-color: var(--green);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.App .contact form > .to input {
+  background-color: var(--colorLight);
+}
+
+.App .contact form > div div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.App .contact form > div div input {
+  padding-right: 2rem;
+}
+
+.App .contact form > div div img {
+  width: 1.5rem;
+  position: absolute;
+  right: 0.5rem;
+}
+
+.App .footer {
+  padding-block: 2rem;
+}
+
+@media (max-width: 600px) {
+  .App .profile .user {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .App .profile .user img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .App .profile .user .user__info {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .App .portfolio .projects .projects__list .project {
+    flex-direction: column;
+  }
+
+  .App .portfolio .projects .projects__list .project .img__container {
+    width: 100%;
+    height: 12rem;
+  }
+
+  .App .portfolio .projects .projects__list .project .img__container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .App .contact form > div,
+  .App .contact form > div {
+    width: 100%;
+  }
+
+  .App .contact form > div input,
+  .App .contact form > div textarea {
+    width: 100%;
+  }
+}

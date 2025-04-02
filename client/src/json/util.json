@@ -1,0 +1,64 @@
+{
+  "languages": [
+    {
+      "name": "HTML",
+      "icon": "/icons8-html-96.png",
+      "side": "frontend"
+    },
+    {
+      "name": "Css",
+      "icon": "/icons8-css-96.png",
+      "side": "frontend"
+    },
+    {
+      "name": "Javascript",
+      "icon": "/icons8-javascript-96.png",
+      "side": "frontend"
+    },
+    {
+      "name": "React",
+      "icon": "/icons8-react-80.png",
+      "side": "frontend"
+    },
+    {
+      "name": "Node js",
+      "icon": "/icons8-nodo-js-96.png",
+      "side": "backend"
+    },
+    {
+      "name": "MySql",
+      "icon": "/mysql-original-wordmark.svg",
+      "side": "backend"
+    }
+  ],
+  "utils": [
+    {
+      "name": "Git",
+      "icon": "/icons8-git-96.png"
+    },
+    {
+      "name": "Github",
+      "icon": "/icons8-github-96.png"
+    }
+  ],
+  "projects": [
+    {
+      "project_name": "Weave",
+      "project_image": "/weave.png",
+      "short_description": "Web page of a social media platform",
+      "description": "Web page of a social media platform, that allows users to create their own profile and share posts with their friends.",
+      "github": "https://github.com/TKbang-bang/Weave.git",
+      "technologies": [
+        "HTML",
+        "Css",
+        "Javascript",
+        "React",
+        "Node js",
+        "MySql"
+      ],
+      "util": ["Git", "Github", "Visual Studio Code"],
+      "background": "rgb(255,255,255)",
+      "linear": "linear-gradient(140deg, rgba(255,255,255,1) 0%, rgba(255,125,83,1) 100%)"
+    }
+  ]
+}
