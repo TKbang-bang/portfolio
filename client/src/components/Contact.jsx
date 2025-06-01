@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -9,8 +10,33 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("");
 
-    console.log({ name, email, subject, message });
+    try {
+      const res = await axios.post(
+        `${import.meta.env.VITE_SERVER_URL}/contact`,
+        {
+          name,
+          email,
+          subject,
+          message,
+        }
+      );
+
+      if (!res.data.ok) throw new Error(res.data.message);
+
+      setName("");
+      setEmail("");
+      setSubject("Offer a job");
+      setMessage("");
+      setStatus(res.data.message);
+
+      setTimeout(() => {
+        setStatus("");
+      }, 5000);
+    } catch (error) {
+      setStatus(error.response?.data.message);
+    }
   };
 
   return (
@@ -52,6 +78,7 @@ function Contact() {
           name="message"
           placeholder="Your message"
           rows="6"
+          maxLength={800}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
