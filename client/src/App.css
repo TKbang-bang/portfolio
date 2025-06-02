@@ -67,6 +67,25 @@
   padding: 0.5rem 1rem;
 }
 
+.app .presentation .presentation__text .btn {
+  margin-top: 2rem;
+  background: var(--color0);
+  color: var(--color1);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  width: fit-content;
+  transition: background 0.3s ease;
+}
+
+.app .presentation .presentation__text .btn:hover {
+  background: var(--color3);
+  cursor: pointer;
+}
+
 .app .presentation .social {
   width: 60%;
   height: 5rem;
@@ -81,7 +100,6 @@
 
 .app .about {
   background: var(--color2);
-  padding: 5rem 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +122,7 @@
   opacity: 0.9;
 }
 
-.about .download-btn {
+.app .about .download-btn {
   margin-top: 2rem;
   background: var(--color0);
   color: var(--color1);
@@ -118,14 +136,13 @@
   transition: background 0.3s ease;
 }
 
-.about .download-btn:hover {
+.app .about .download-btn:hover {
   background: var(--color3);
   cursor: pointer;
 }
 
 .app > .technologies {
   background: var(--color1);
-  padding: 5rem 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,7 +261,6 @@
 
 .app .skills {
   background: var(--color2);
-  padding: 5rem 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -289,7 +305,6 @@
 
 .app .contact {
   background: var(--color1);
-  padding: 5rem 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,4 +376,73 @@
   color: var(--white);
   font-size: 1rem;
   opacity: 0.9;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1280px) {
+  .app section {
+    padding: 5rem;
+    width: 100vw;
+  }
+
+  .app .presentation {
+    justify-content: center;
+  }
+
+  .app .presentation .social {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app section {
+    padding: 5rem 1rem;
+  }
+
+  .app .presentation {
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+
+  .app .presentation img {
+    width: 12rem;
+    height: 18rem;
+  }
+
+  .app .presentation .presentation__text {
+    align-items: center;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .app .presentation .social {
+    width: 80%;
+  }
+
+  .app .projects {
+    background: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .app .projects ._projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .app .projects ._projects article {
+    height: 100%;
+    padding-bottom: 1.5rem;
+  }
+
+  .app .projects ._projects article a {
+    margin-top: 1rem;
+  }
+
+  .app .projects ._projects article a svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
